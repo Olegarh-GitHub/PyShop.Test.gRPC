@@ -1,0 +1,68 @@
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{}' localhost:5293 billing.Billing/ListUsers
+{
+  "name": "Bulat",
+  "amount": "1",
+  "rating": 5000
+}
+{
+  "name": "Damir",
+  "amount": "1",
+  "rating": 1000
+}
+{
+  "name": "Oleg",
+  "amount": "1",
+  "rating": 800
+}
+
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{ \"amount\" : 10 }' localhost:5293 billing.Billing/CoinsEmission
+{
+  "status": "STATUS_OK",
+  "comment": "Each user receive coins"
+}
+
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{}' localhost:5293 billing.Billing/ListUsers
+{
+  "name": "Bulat",
+  "amount": "8",
+  "rating": 5000
+}
+{
+  "name": "Damir",
+  "amount": "2",
+  "rating": 1000
+}
+{
+  "name": "Oleg",
+  "amount": "2",
+  "rating": 800
+}
+
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{\"amount\":5,\"dst_user\":\"Damir\",\"src_user\":\"Bulat\"}' localhost:5293 billing.Billing/MoveCoins
+{
+  "status": "STATUS_OK",
+  "comment": "5 coins have been moved to Damir"
+}
+
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{}' localhost:5293 billing.Billing/ListUsers
+{
+  "name": "Bulat",
+  "amount": "3",
+  "rating": 5000
+}
+{
+  "name": "Damir",
+  "amount": "7",
+  "rating": 1000
+}
+{
+  "name": "Oleg",
+  "amount": "2",
+  "rating": 800
+}
+
+grpcurl -import-path PyShop.gRPC/Protos -proto billing.proto -plaintext -d '{}' localhost:5293 billing.Billing/LongestHistoryCoin
+{
+  "id": "228",
+  "history": "Bulat,Damir"
+}

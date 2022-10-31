@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PyShop.gRPC.Domain\PyShop.gRPC.Domain.csproj" />
+      <ProjectReference Include="..\PyShop.gRPC.Infrastructure\PyShop.gRPC.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyShop.gRPC", "PyShop.gRPC\PyShop.gRPC.csproj", "{30E42C07-FCDC-455A-A954-05AEACD7124F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyShop.gRPC.Domain", "PyShop.gRPC.Domain\PyShop.gRPC.Domain.csproj", "{3D5584FD-D498-434D-B9AE-36F51FB1373A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyShop.gRPC.Application", "PyShop.gRPC.Application\PyShop.gRPC.Application.csproj", "{18BBE564-40D8-48AD-87B2-43E28B94FDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyShop.gRPC.Infrastructure", "PyShop.gRPC.Infrastructure\PyShop.gRPC.Infrastructure.csproj", "{8EF48E50-8EBC-4F8E-9DE8-B7F2A7762FFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30E42C07-FCDC-455A-A954-05AEACD7124F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E42C07-FCDC-455A-A954-05AEACD7124F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E42C07-FCDC-455A-A954-05AEACD7124F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E42C07-FCDC-455A-A954-05AEACD7124F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5584FD-D498-434D-B9AE-36F51FB1373A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5584FD-D498-434D-B9AE-36F51FB1373A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5584FD-D498-434D-B9AE-36F51FB1373A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5584FD-D498-434D-B9AE-36F51FB1373A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BBE564-40D8-48AD-87B2-43E28B94FDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BBE564-40D8-48AD-87B2-43E28B94FDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BBE564-40D8-48AD-87B2-43E28B94FDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BBE564-40D8-48AD-87B2-43E28B94FDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF48E50-8EBC-4F8E-9DE8-B7F2A7762FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF48E50-8EBC-4F8E-9DE8-B7F2A7762FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF48E50-8EBC-4F8E-9DE8-B7F2A7762FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF48E50-8EBC-4F8E-9DE8-B7F2A7762FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

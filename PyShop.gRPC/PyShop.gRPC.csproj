@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+        <Protobuf Include="Protos\billing.proto" GrpcServices="Server" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoMapper" Version="12.0.0" />
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+        <PackageReference Include="Grpc.AspNetCore" Version="2.40.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\PyShop.gRPC.Application\PyShop.gRPC.Application.csproj" />
+      <ProjectReference Include="..\PyShop.gRPC.Infrastructure\PyShop.gRPC.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
